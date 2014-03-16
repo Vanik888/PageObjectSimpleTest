@@ -1,6 +1,9 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.touch.MoveAction;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,7 +21,8 @@ public class simpleTest {
         this.driver = new FirefoxDriver();
         driver.get("http://go.mail.ru");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        Thread.sleep(2000);
         System.out.println("BeforeMethod");
     }
 
@@ -29,6 +33,7 @@ public class simpleTest {
         System.out.println(result);
         Assert.assertTrue(result.contains("bmstu.ru"));
     }
+
     @Test
     public void testSuggestsWithRussianInputs() {
         System.out.println("secondTest");
@@ -38,15 +43,26 @@ public class simpleTest {
     @Test
     public void tesImgIsNotHidden() {
         System.out.println("HideImg");
-        Assert.assertEquals(new MainPage(driver).getImgButton().getText(), "Убрать фото");
+        Assert.assertEquals(new MainPage(driver).getHideImgButton().getText(), "Убрать фото");
 
     }
     @Test
     public void testImgIsHidden() throws InterruptedException {
-        WebElement btn = new MainPage(driver).getImgButton();
+        Thread.sleep(1000);
+        WebElement btn = new MainPage(driver).getHideImgButton();
         btn.click();
         Thread.sleep(2000);
-        Assert.assertEquals(new MainPage(driver).getImgButton().getText(), "Показать фото");
+        Assert.assertEquals(new MainPage(driver).getHideImgButton().getText(), "Показать фото");
+    }
+    @Test
+    public void testShowPreviousImg() throws InterruptedException {
+        String currentImgSrc = new MainPage(driver).getImg().getAttribute("src");
+        Actions act =  new Actions(driver);
+        act.moveToElement(new MainPage(driver).getImg()).perform();
+        WebElement btn = new MainPage(driver).getToLeftButton();
+        btn.click();
+        Thread.sleep(2000);
+        Assert.assertNotEquals(currentImgSrc, new MainPage(driver).getImg().getAttribute("src"));
     }
 
     @AfterMethod

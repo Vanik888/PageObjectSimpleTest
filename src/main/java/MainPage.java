@@ -18,10 +18,15 @@ public class MainPage {
 //    public ImgButton getImgButton() {
 //        return new ImgButton(driver);
 //    }
-    public WebElement getImgButton() {
+    public WebElement getHideImgButton() {
         return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("wallpapers__toggle")));
     }
-
+    public WebElement getToLeftButton() {
+        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("wallpapers__prev")));
+    }
+    public WebElement getImg() {
+        return new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(By.className("wallpapers__preload")));
+    }
 //    public void enterText(String text) {
 //        searchForm.sendKeys("vk");
 //    }

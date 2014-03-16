@@ -24,6 +24,11 @@ public class SearchForm {
     public void getFirstHref() {
         WebElement li = driver.findElement(By.id("js_result_1"));
 //        li.
+//        wallpapers__preload wallpapers__preload-left wallpapers__preload-event1
+//        wallpapers__preload wallpapers__preload-event0
+//        wallpapers__preload wallpapers__preload-first
+
+
     }
     public String getSuggests() {
         return new WebDriverWait(driver,5).
