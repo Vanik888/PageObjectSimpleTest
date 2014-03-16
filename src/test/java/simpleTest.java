@@ -17,6 +17,7 @@ public class simpleTest {
     public void setUp() throws InterruptedException {
         this.driver = new FirefoxDriver();
         driver.get("http://go.mail.ru");
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         System.out.println("BeforeMethod");
     }
@@ -34,7 +35,19 @@ public class simpleTest {
         String result = new MainPage(driver).getSearchForm().enterText("иьыегюкг").getSuggests();
         Assert.assertTrue(result.contains("bmstu.ru"));
     }
-    
+    @Test
+    public void tesImgIsNotHidden() {
+        System.out.println("HideImg");
+        Assert.assertEquals(new MainPage(driver).getImgButton().getText(), "Убрать фото");
+
+    }
+    @Test
+    public void testImgIsHidden() throws InterruptedException {
+        WebElement btn = new MainPage(driver).getImgButton();
+        btn.click();
+        Thread.sleep(2000);
+        Assert.assertEquals(new MainPage(driver).getImgButton().getText(), "Показать фото");
+    }
 
     @AfterMethod
     public void tearDown() {

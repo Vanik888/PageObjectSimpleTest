@@ -84,7 +84,7 @@
       <file leaf-file-name="SearchForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="5" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="615">
+            <state line="29" column="41" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="585">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,13 +92,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainPage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="simpleTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/simpleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="4" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.7176471" vertical-offset="235" max-vertical-offset="780">
+            <state line="50" column="0" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.47058824" vertical-offset="550" max-vertical-offset="975">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImgButton.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ImgButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="82" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,8 +132,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/SearchForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ImgButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/simpleTest.java" />
       </list>
     </option>
@@ -555,12 +574,12 @@
       <created>1394900071733</created>
       <updated>1394900071733</updated>
       <workItem from="1394900075657" duration="6347000" />
-      <workItem from="1394914144777" duration="10797000" />
+      <workItem from="1394914144777" duration="12961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17144000" />
+    <option name="totallyTimeSpent" value="19308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="920" y="25" width="1000" height="1055" extended-state="0" />
@@ -675,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="316" selection-end="316" vertical-scroll-proportion="0.3164557" vertical-offset="0" max-vertical-offset="474">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/2.39.0/selenium-remote-driver-2.39.0-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="275" column="0" selection-start="9940" selection-end="9940" vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="12165">
@@ -738,8 +750,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="222" column="0" selection-start="8703" selection-end="8703" vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="4830">
           <folding>
-            <element signature="e#8514#9205#0" expanded="true" />
-            <element signature="e#9198#9199#0" expanded="true" />
+            <element signature="e#8514#9205#0" expanded="false" />
+            <element signature="e#9198#9199#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -793,9 +805,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ImgButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="82" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="5" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="615">
+        <state line="29" column="41" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="585">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/simpleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.7176471" vertical-offset="235" max-vertical-offset="780">
+        <state line="50" column="0" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.47058824" vertical-offset="550" max-vertical-offset="975">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

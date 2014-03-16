@@ -17,8 +17,6 @@ public class SearchForm {
         this.driver = driver;
     }
     public SearchForm enterText(String text) {
-//        WebElement webElement = driver.findElement(By.id("q"));
-//        webElement.sendKeys("text");
         driver.findElement(By.id("q")).sendKeys(text);
         return this;
 
