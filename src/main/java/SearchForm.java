@@ -12,7 +12,6 @@ import java.util.List;
  */
 public class SearchForm {
     private WebDriver driver;
-//    private WebElement searchForm;
 
     public SearchForm(WebDriver driver) {
         this.driver = driver;

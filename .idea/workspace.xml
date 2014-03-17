@@ -56,7 +56,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="89" class="simpleTest" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="71" class="simpleTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -71,7 +71,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="70" class="simpleTest" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="52" class="simpleTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -99,7 +99,7 @@
       <file leaf-file-name="SearchForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="29" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+            <state line="13" column="29" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -114,10 +114,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="21" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageObjectSimpleTest.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageObjectSimpleTest.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="1020">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MainPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+            <state line="11" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -126,7 +144,7 @@
       <file leaf-file-name="simpleTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/simpleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="0" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.6854839" vertical-offset="1615" max-vertical-offset="2250">
+            <state line="24" column="41" selection-start="794" selection-end="794" vertical-scroll-proportion="0.24875621" vertical-offset="210" max-vertical-offset="1875">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,9 +165,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ImgButton.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/simpleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SearchForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
       </list>
     </option>
   </component>
@@ -168,10 +186,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1841" />
-    <option name="height" value="1056" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -220,17 +238,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PageObjectSimpleTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,6 +334,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PageObjectSimpleTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,7 +359,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wsh1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -784,12 +802,13 @@
       <workItem from="1394914144777" duration="16287000" />
       <workItem from="1394988746308" duration="2550000" />
       <workItem from="1395000308678" duration="16723000" />
-      <workItem from="1395054211728" duration="17740000" />
+      <workItem from="1395054211728" duration="17757000" />
+      <workItem from="1395080268291" duration="297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59647000" />
+    <option name="totallyTimeSpent" value="59961000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -812,7 +831,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1841" height="1056" extended-state="4" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -820,12 +839,11 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49861497" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.289011" sideWeight="0.24429604" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5002758" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -835,11 +853,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09090909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14468558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.289011" sideWeight="0.7557039" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24544953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4515442" sideWeight="0.7556536" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.4997242" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -864,6 +884,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="29" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="8" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/simpleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="28" selection-start="5603" selection-end="5603" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="2250">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="133" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
@@ -973,13 +1023,6 @@
         <state line="7" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1020" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="660" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.39.0/selenium-support-2.39.0-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="236" column="52" selection-start="7443" selection-end="7443" vertical-scroll-proportion="0.3325062" vertical-offset="3001" max-vertical-offset="10965">
@@ -1056,21 +1099,12 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.39.0/selenium-api-2.39.0-sources.jar!/org/openqa/selenium/remote/DesiredCapabilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.20153551" vertical-offset="0" max-vertical-offset="3645">
-          <folding />
-        </state>
+        <state line="37" column="13" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.20153551" vertical-offset="0" max-vertical-offset="3645" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.39.0/selenium-api-2.39.0-sources.jar!/org/openqa/selenium/By.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="234" column="25" selection-start="7369" selection-end="7369" vertical-scroll-proportion="0.33205375" vertical-offset="2992" max-vertical-offset="6570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PageObjectSimpleTest.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.20153551" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
@@ -1089,13 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="29" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="8" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
@@ -1103,16 +1130,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="21" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageObjectSimpleTest.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="29" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+        <state line="11" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/simpleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="0" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.6854839" vertical-offset="1615" max-vertical-offset="2250">
+        <state line="24" column="41" selection-start="794" selection-end="794" vertical-scroll-proportion="0.24875621" vertical-offset="210" max-vertical-offset="1875">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

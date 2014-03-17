@@ -1,14 +1,8 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.touch.MoveAction;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,17 +20,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class simpleTest {
     private WebDriver driver;
-//    @BeforeMethod
-//    public void setUp() throws InterruptedException {
-////        this.driver = new FirefoxDriver();
-//        System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver");
-//        this.driver = new ChromeDriver();
-//        driver.get("http://go.mail.ru");
-//        driver.manage().window().maximize();
-////        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-//        Thread.sleep(2000);
-//        System.out.println("BeforeMethod");
-//    }
     @BeforeMethod
     @Parameters({"browser", "hub", "url"})
     public void setUp(String browser, String hub, String url) throws MalformedURLException {
@@ -68,7 +51,6 @@ public class simpleTest {
 
     @Test
     public void testSuggestsBmstuWithRussianInputs() {
-        System.out.println("secondTest");
         String result = new MainPage(driver).getSearchForm().enterText("иьыегюкг").suggestsAreReady().getSuggests();
         Assert.assertTrue(result.contains("bmstu.ru"));
     }
@@ -130,14 +112,7 @@ public class simpleTest {
     }
     @AfterMethod
     public void tearDown() {
-        System.out.println("tearDown");
-//        driver.close();
         driver.quit();
-//        try {
-//            Thread.sleep(3);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
     }
 
 
