@@ -34,15 +34,15 @@ public class SearchForm {
     }
 
     public WebElement getMistypeAuto() {
-        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.className("mistype__auto"))).findElement(By.tagName("a"));
+        return new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.className("mistype__auto"))).findElement(By.tagName("a"));
     }
     public WebElement getSearchInput() {
         return driver.findElement(By.id("q"));
     }
     public WebElement getTopMenuImgs() {
-        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("tbl-img"))).findElement(By.tagName("a"));
+        return new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.id("tbl-img"))).findElement(By.tagName("a"));
     }
     public WebElement getImgById() {
-        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("it_2")));
+        return new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.id("it_2")));
     }
 }

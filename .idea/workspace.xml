@@ -56,7 +56,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="88" class="simpleTest" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="89" class="simpleTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -71,7 +71,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="68" class="simpleTest" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/simpleTest.java" line="70" class="simpleTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -99,7 +99,16 @@
       <file leaf-file-name="SearchForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="42" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="705">
+            <state line="32" column="29" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="8" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -108,7 +117,7 @@
       <file leaf-file-name="MainPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="37" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="780">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -117,7 +126,7 @@
       <file leaf-file-name="simpleTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/simpleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="96" selection-start="3240" selection-end="3240" vertical-scroll-proportion="0.3467742" vertical-offset="910" max-vertical-offset="2250">
+            <state line="136" column="0" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.6854839" vertical-offset="1615" max-vertical-offset="2250">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,9 +147,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ImgButton.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/simpleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SearchForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/simpleTest.java" />
       </list>
     </option>
   </component>
@@ -775,12 +784,12 @@
       <workItem from="1394914144777" duration="16287000" />
       <workItem from="1394988746308" duration="2550000" />
       <workItem from="1395000308678" duration="16723000" />
-      <workItem from="1395054211728" duration="13438000" />
+      <workItem from="1395054211728" duration="17740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55345000" />
+    <option name="totallyTimeSpent" value="59647000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -827,7 +836,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09090909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14468558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.289011" sideWeight="0.7557039" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.289011" sideWeight="0.7557039" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -993,11 +1002,6 @@
         <state line="83" column="0" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.3467742" vertical-offset="728" max-vertical-offset="4320" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ImgButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="82" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_25/src.zip!/java/net/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="23" selection-start="2287" selection-end="2341" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="3705" />
@@ -1050,13 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.39.0/selenium-api-2.39.0-sources.jar!/org/openqa/selenium/WebElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="13" selection-start="7381" selection-end="7381" vertical-scroll-proportion="0.33333334" vertical-offset="2026" max-vertical-offset="2940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.39.0/selenium-api-2.39.0-sources.jar!/org/openqa/selenium/remote/DesiredCapabilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="13" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.20153551" vertical-offset="0" max-vertical-offset="3645">
@@ -1071,13 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="454" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PageObjectSimpleTest.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.20153551" vertical-offset="0" max-vertical-offset="1020">
@@ -1085,23 +1075,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.39.0/selenium-api-2.39.0-sources.jar!/org/openqa/selenium/WebElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="9" selection-start="4918" selection-end="4918" vertical-scroll-proportion="0.33225808" vertical-offset="1159" max-vertical-offset="2940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="857" column="21" selection-start="27916" selection-end="27916" vertical-scroll-proportion="-1.1193548" vertical-offset="13354" max-vertical-offset="14190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SearchForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="42" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="705">
+        <state line="32" column="29" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="8" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="37" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="780">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/simpleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="96" selection-start="3240" selection-end="3240" vertical-scroll-proportion="0.3467742" vertical-offset="910" max-vertical-offset="2250">
+        <state line="136" column="0" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.6854839" vertical-offset="1615" max-vertical-offset="2250">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
