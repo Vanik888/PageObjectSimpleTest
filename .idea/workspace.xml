@@ -106,7 +106,7 @@
       <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="34" selection-start="204" selection-end="204" vertical-scroll-proportion="0.09950249" vertical-offset="0" max-vertical-offset="603">
+            <state line="2" column="14" selection-start="57" selection-end="57" vertical-scroll-proportion="0.049751244" vertical-offset="0" max-vertical-offset="603">
               <folding />
             </state>
           </provider>
@@ -130,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/test/java/MainPageTest.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/simpleTest.java" />
+        <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
   </component>
@@ -786,12 +787,12 @@
       <workItem from="1395000308678" duration="16723000" />
       <workItem from="1395054211728" duration="17757000" />
       <workItem from="1395080268291" duration="6493000" />
-      <workItem from="1395088443766" duration="2618000" />
+      <workItem from="1395088443766" duration="3155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68775000" />
+    <option name="totallyTimeSpent" value="69312000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1180,7 +1181,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="204" selection-end="204" vertical-scroll-proportion="0.09950249" vertical-offset="0" max-vertical-offset="603">
+        <state line="2" column="14" selection-start="57" selection-end="57" vertical-scroll-proportion="0.049751244" vertical-offset="0" max-vertical-offset="603">
           <folding />
         </state>
       </provider>
