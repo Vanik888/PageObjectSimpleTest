@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,10 +24,15 @@ public class SearchForm {
     public void Submit() {
         driver.findElement(By.id("q")).submit();
     }
-
-    public String getSuggests()  {
-        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.className("go-suggests__items"))).getText();
+    public SearchForm suggestsAreReady() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.elementToBeClickable(By.className("go-suggests__item")));
+        return this;
     }
+    public String getSuggests()  {
+        return new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.className("go-suggests__items"))).getText();
+    }
+
     public WebElement getMistypeAuto() {
         return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.className("mistype__auto"))).findElement(By.tagName("a"));
     }

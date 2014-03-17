@@ -17,11 +17,8 @@ public class MainPage {
     public SearchForm getSearchForm() {
         return new SearchForm(driver);
     }
-//    public ImgButton getImgButton() {
-//        return new ImgButton(driver);
-//    }
     public WebElement getHideImgButton() {
-        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("wallpapers__toggle")));
+        return new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.id("wallpapers__toggle")));
     }
     public WebElement getToLeftButton() {
         return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("wallpapers__prev")));
@@ -39,8 +36,14 @@ public class MainPage {
         return getResultList().get(num-1).findElement(By.className("result__title")).findElement(By.tagName("a"));
     }
     public WebElement getResult() {
-                return new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(By.id("js-result_2"))).findElement(By.className("block-info")).findElement(By.tagName("a"));
+        return new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(By.id("js-result_2"))).findElement(By.className("block-info")).findElement(By.tagName("a"));
 //        return new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(By.id("js-result_1"))).findElement(By.className("light-link"));
+    }
+    public Boolean imgIsHidden() {
+        return new WebDriverWait(driver,10).until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.id("wallpapers__toggle")), "Показать фото"));
+    }
+    public Boolean imgIsNotHidden() {
+        return new WebDriverWait(driver,10).until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.id("wallpapers__toggle")), "Убрать фото"));
     }
 //    public void enterText(String text) {
 //        searchForm.sendKeys("vk");

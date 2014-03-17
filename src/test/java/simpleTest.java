@@ -16,6 +16,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -45,96 +46,98 @@ public class simpleTest {
             throw new NotImplementedException();
         this.driver.manage().window().maximize();
         this.driver.get(url);
+        this.driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
     }
-    @Test
-    public void testSuggestsBmstu() {
-        System.out.println("firstTest");
-        String result =  new MainPage(driver).getSearchForm().enterText("bmstu").getSuggests();
-        System.out.println(result);
-        Assert.assertTrue(result.contains("bmstu.ru"));
-    }
-    @Test
-    public void testSuggestsFacebook() throws InterruptedException {
-        String result  = new MainPage(driver).getSearchForm().enterText("f").getSuggests();
-        Thread.sleep(200);
-        Assert.assertTrue(result.contains("facebook"));
-    }
-    @Test
-    public void testSeggestsMoscowUfaTickets() throws InterruptedException {
-        String result = new MainPage(driver).getSearchForm().enterText("москва уфа").getSuggests();
-        System.out.println(result);
-        Thread.sleep(200);
-        Assert.assertTrue(result.contains("билет"));
-    }
+//    @Test
+//    public void testSuggestsBmstu() {
+//        String result =  new MainPage(driver).getSearchForm().enterText("bmstu").suggestsAreReady().getSuggests();
+//        Assert.assertTrue(result.contains("bmstu.ru"));
+//    }
+//    @Test
+//    public void testSuggestsFacebook() {
+//        String result  = new MainPage(driver).getSearchForm().enterText("f").suggestsAreReady().getSuggests();
+//        Assert.assertTrue(result.contains("facebook"));
+//    }
+//    @Test
+//    public void testSeggestsMoscowUfaTickets() {
+//        String result = new MainPage(driver).getSearchForm().enterText("москва уфа").suggestsAreReady().getSuggests();
+//        Assert.assertTrue(result.contains("билет"));
+//    }
+//
+//    @Test
+//    public void testSuggestsBmstuWithRussianInputs() {
+//        System.out.println("secondTest");
+//        String result = new MainPage(driver).getSearchForm().enterText("иьыегюкг").suggestsAreReady().getSuggests();
+//        Assert.assertTrue(result.contains("bmstu.ru"));
+//    }
 
-    @Test
-    public void testSuggestsBmstuWithRussianInputs() {
-        System.out.println("secondTest");
-        String result = new MainPage(driver).getSearchForm().enterText("иьыегюкг").getSuggests();
-        Assert.assertTrue(result.contains("bmstu.ru"));
-    }
     @Test
     public void tesImgIsNotHidden() {
-        System.out.println("HideImg");
-        Assert.assertEquals(new MainPage(driver).getHideImgButton().getText(), "Убрать фото");
+//        Assert.assertEquals(new MainPage(driver).getHideImgButton().getText(), "Убрать фото");
+        Assert.assertTrue(new MainPage(driver).imgIsNotHidden());
     }
+
+
     @Test
-    public void testImgIsHidden() throws InterruptedException {
-        Thread.sleep(1000);
+    public void testImgIsHidden(){
         WebElement btn = new MainPage(driver).getHideImgButton();
         btn.click();
-        Thread.sleep(2000);
-        Assert.assertEquals(new MainPage(driver).getHideImgButton().getText(), "Показать фото");
+        Assert.assertTrue(new MainPage(driver).imgIsHidden());
     }
-    @Test
-    public void testShowPreviousImg() throws InterruptedException {
-        String currentImgSrc = new MainPage(driver).getImg().getAttribute("src");
-        Actions act =  new Actions(driver);
-        act.moveToElement(new MainPage(driver).getImg()).perform();
-        WebElement btn = new MainPage(driver).getToLeftButton();
-        btn.click();
-        Thread.sleep(2000);
-        Assert.assertNotEquals(currentImgSrc, new MainPage(driver).getImg().getAttribute("src"));
-    }
-    @Test
-    public void testSecondResultOfTheKillers() {
-        new MainPage(driver).getSearchForm().enterText("the killers").Submit();
-        String href  = new MainPage(driver).getResultHrefOfElementByNumber(2).getText();
-        Assert.assertEquals(href, "thekillersmusic.com");
-    }
-
-    @Test
-    public void testThirdResultOfTheKillers() {
-        new MainPage(driver).getSearchForm().enterText("the killers").Submit();
-        String href  = new MainPage(driver).getResultHrefOfElementByNumber(3).getText();
-        Assert.assertEquals(href, "ru.wikipedia.org/wiki/The_Killers");
-    }
-
-    @Test
-    public void testMistypeAutoExists() {
-        new MainPage(driver).getSearchForm().enterText("мосвка").Submit();
-        String mistype = new MainPage(driver).getSearchForm().getMistypeAuto().getText();
-        Assert.assertEquals(mistype, "мосвка");
-    }
-    @Test
-    public void testMistypeFixed() {
-        new MainPage(driver).getSearchForm().enterText("мосвка").Submit();
-        String inputText = new MainPage(driver).getResultTitleOfElementByNumber(2).getText();
-        Assert.assertTrue(inputText.contains("Москва"));
-    }
-    @Test
-    public void testHoveredImageIsMaximized() {
-        new MainPage(driver).getSearchForm().enterText("Москва").Submit();
-        new MainPage(driver).getSearchForm().getTopMenuImgs().click();
-        Actions act = new Actions(driver);
-        act.moveToElement(new MainPage(driver).getSearchForm().getImgById()).perform();
-        Assert.assertTrue(new MainPage(driver).getSearchForm().getImgById().getAttribute("class").contains("popup-showed"));
-    }
+//    @Test
+//    public void testShowPreviousImg() throws InterruptedException {
+//        String currentImgSrc = new MainPage(driver).getImg().getAttribute("src");
+//        Actions act =  new Actions(driver);
+//        act.moveToElement(new MainPage(driver).getImg()).perform();
+//        WebElement btn = new MainPage(driver).getToLeftButton();
+//        btn.click();
+//        Thread.sleep(2000);
+//        Assert.assertNotEquals(currentImgSrc, new MainPage(driver).getImg().getAttribute("src"));
+//    }
+//    @Test
+//    public void testSecondResultOfTheKillers() {
+//        new MainPage(driver).getSearchForm().enterText("the killers").Submit();
+//        String href  = new MainPage(driver).getResultHrefOfElementByNumber(2).getText();
+//        Assert.assertEquals(href, "thekillersmusic.com");
+//    }
+//
+//    @Test
+//    public void testThirdResultOfTheKillers() {
+//        new MainPage(driver).getSearchForm().enterText("the killers").Submit();
+//        String href  = new MainPage(driver).getResultHrefOfElementByNumber(3).getText();
+//        Assert.assertEquals(href, "ru.wikipedia.org/wiki/The_Killers");
+//    }
+//
+//    @Test
+//    public void testMistypeAutoExists() {
+//        new MainPage(driver).getSearchForm().enterText("мосвка").Submit();
+//        String mistype = new MainPage(driver).getSearchForm().getMistypeAuto().getText();
+//        Assert.assertEquals(mistype, "мосвка");
+//    }
+//    @Test
+//    public void testMistypeFixed() {
+//        new MainPage(driver).getSearchForm().enterText("мосвка").Submit();
+//        String inputText = new MainPage(driver).getResultTitleOfElementByNumber(2).getText();
+//        Assert.assertTrue(inputText.contains("Москва"));
+//    }
+//    @Test
+//    public void testHoveredImageIsMaximized() {
+//        new MainPage(driver).getSearchForm().enterText("Москва").Submit();
+//        new MainPage(driver).getSearchForm().getTopMenuImgs().click();
+//        Actions act = new Actions(driver);
+//        act.moveToElement(new MainPage(driver).getSearchForm().getImgById()).perform();
+//        Assert.assertTrue(new MainPage(driver).getSearchForm().getImgById().getAttribute("class").contains("popup-showed"));
+//    }
     @AfterMethod
     public void tearDown() {
         System.out.println("tearDown");
 //        driver.close();
         driver.quit();
+        try {
+            Thread.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
