@@ -17,22 +17,26 @@ public class SearchForm {
         this.driver = driver;
     }
     public SearchForm enterText(String text) {
-        driver.findElement(By.id("q")).sendKeys(text);
+        this.getSearchInput().sendKeys(text);
         return this;
-
     }
-    public void getFirstHref() {
-        WebElement li = driver.findElement(By.id("js_result_1"));
-//        li.
-//        wallpapers__preload wallpapers__preload-left wallpapers__preload-event1
-//        wallpapers__preload wallpapers__preload-event0
-//        wallpapers__preload wallpapers__preload-first
-
-
+    public void Submit() {
+        driver.findElement(By.id("q")).submit();
     }
-    public String getSuggests() {
-        return new WebDriverWait(driver,5).
-                until(ExpectedConditions.
-                        presenceOfElementLocated(By.className("go-suggests__item"))).getText();
+
+    public String getSuggests()  {
+        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.className("go-suggests__items"))).getText();
+    }
+    public WebElement getMistypeAuto() {
+        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.className("mistype__auto"))).findElement(By.tagName("a"));
+    }
+    public WebElement getSearchInput() {
+        return driver.findElement(By.id("q"));
+    }
+    public WebElement getTopMenuImgs() {
+        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("tbl-img"))).findElement(By.tagName("a"));
+    }
+    public WebElement getImgById() {
+        return new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.id("it_2")));
     }
 }

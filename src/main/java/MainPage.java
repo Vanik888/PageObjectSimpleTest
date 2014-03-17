@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 /**
  * Created by vanik on 15.03.14.
  */
@@ -26,6 +28,19 @@ public class MainPage {
     }
     public WebElement getImg() {
         return new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(By.className("wallpapers__preload")));
+    }
+    public List<WebElement> getResultList() {
+        return new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.className("result__li")));
+    }
+    public WebElement getResultHrefOfElementByNumber(int num) {
+        return getResultList().get(num-1).findElement(By.className("block-info")).findElement(By.tagName("a"));
+    }
+    public WebElement getResultTitleOfElementByNumber(int num) {
+        return getResultList().get(num-1).findElement(By.className("result__title")).findElement(By.tagName("a"));
+    }
+    public WebElement getResult() {
+                return new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(By.id("js-result_2"))).findElement(By.className("block-info")).findElement(By.tagName("a"));
+//        return new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(By.id("js-result_1"))).findElement(By.className("light-link"));
     }
 //    public void enterText(String text) {
 //        searchForm.sendKeys("vk");
