@@ -4,10 +4,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.net.MalformedURLException;
@@ -20,6 +17,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class simpleTest {
     private WebDriver driver;
+
     @BeforeMethod
     @Parameters({"browser", "hub", "url"})
     public void setUp(String browser, String hub, String url) throws MalformedURLException {
@@ -114,6 +112,5 @@ public class simpleTest {
     public void tearDown() {
         driver.quit();
     }
-
 
 }
